@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Shop management app with income/expense tracking, supplier personal borrowing, and advance payment tracking",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-add-a-new-supplier-loans-section-to-track-money-borrowed-by-the-supplier-for-personal-use-including-fields-for-amount-date-supplier-name-purpose-description-and-repayment-status",
+      "title": "Add a new 'Supplier Loans' section to track money borrowed by the supplier for personal use, including fields for amount, date, supplier name, purpose/description, and repayment status",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-advance-payments-section-to-track-advance-payments-given-to-the-supplier-including-fields-for-amount-date-supplier-name-purpose-description-and-settlement-status",
+      "title": "Add a new 'Advance Payments' section to track advance payments given to the supplier, including fields for amount, date, supplier name, purpose/description, and settlement status",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-navigation-tabs-for-supplier-loans-and-advance-payments-to-the-main-application-navigation-alongside-existing-income-expenses-sales-and-purchases-tabs",
+      "title": "Add navigation tabs for 'Supplier Loans' and 'Advance Payments' to the main application navigation alongside existing Income, Expenses, Sales, and Purchases tabs",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-dashboard-to-include-summary-statistics-for-total-outstanding-supplier-loans-and-total-pending-advance-payments",
+      "title": "Update the Dashboard to include summary statistics for total outstanding supplier loans and total pending advance payments",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Track personal borrowing for supplier",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Track advance payments given to supplier",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Rida Shop Manager",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

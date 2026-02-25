@@ -1,0 +1,102 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-20T06:11:37.363Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 4,
+    "implemented": 4,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Add a new 'Supplier Loans' section to track money borrowed by the supplier for personal use, including fields for amount, date, supplier name, purpose/description, and repayment status",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/SupplierLoanForm.tsx",
+          "frontend/src/components/SupplierLoanList.tsx",
+          "frontend/src/components/SupplierLoanPage.tsx",
+          "frontend/src/hooks/useQueries.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/SupplierLoanForm.tsx",
+          "frontend/src/components/SupplierLoanList.tsx",
+          "frontend/src/components/SupplierLoanPage.tsx",
+          "frontend/src/hooks/useQueries.ts"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Add a new 'Advance Payments' section to track advance payments given to the supplier, including fields for amount, date, supplier name, purpose/description, and settlement status",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/AdvancePaymentForm.tsx",
+          "frontend/src/components/AdvancePaymentList.tsx",
+          "frontend/src/components/AdvancePaymentPage.tsx",
+          "frontend/src/hooks/useQueries.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/AdvancePaymentForm.tsx",
+          "frontend/src/components/AdvancePaymentList.tsx",
+          "frontend/src/components/AdvancePaymentPage.tsx",
+          "frontend/src/hooks/useQueries.ts"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Add navigation tabs for 'Supplier Loans' and 'Advance Payments' to the main application navigation alongside existing Income, Expenses, Sales, and Purchases tabs",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Update the Dashboard to include summary statistics for total outstanding supplier loans and total pending advance payments",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Dashboard.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Dashboard.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/authorization/MixinAuthorization.mo",
+    "backend/authorization/access-control.mo",
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/AdvancePaymentForm.tsx",
+    "frontend/src/components/AdvancePaymentList.tsx",
+    "frontend/src/components/AdvancePaymentPage.tsx",
+    "frontend/src/components/Dashboard.tsx",
+    "frontend/src/components/SupplierLoanForm.tsx",
+    "frontend/src/components/SupplierLoanList.tsx",
+    "frontend/src/components/SupplierLoanPage.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/utils/urlParams.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

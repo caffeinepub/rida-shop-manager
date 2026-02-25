@@ -1,0 +1,87 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-new-supplier-loans-section-to-track-money-borrowed-by-the-supplier-for-personal-use-including-fields-for-amount-date-supplier-name-purpose-description-and-repayment-status",
+      "featureTitle": "Add a new 'Supplier Loans' section to track money borrowed by the supplier for personal use, including fields for amount, date, supplier name, purpose/description, and repayment status",
+      "files": [
+        "frontend/src/components/SupplierLoanForm.tsx",
+        "frontend/src/components/SupplierLoanList.tsx",
+        "frontend/src/components/SupplierLoanPage.tsx",
+        "frontend/src/hooks/useQueries.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-new-advance-payments-section-to-track-advance-payments-given-to-the-supplier-including-fields-for-amount-date-supplier-name-purpose-description-and-settlement-status",
+      "featureTitle": "Add a new 'Advance Payments' section to track advance payments given to the supplier, including fields for amount, date, supplier name, purpose/description, and settlement status",
+      "files": [
+        "frontend/src/components/AdvancePaymentForm.tsx",
+        "frontend/src/components/AdvancePaymentList.tsx",
+        "frontend/src/components/AdvancePaymentPage.tsx",
+        "frontend/src/hooks/useQueries.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-navigation-tabs-for-supplier-loans-and-advance-payments-to-the-main-application-navigation-alongside-existing-income-expenses-sales-and-purchases-tabs",
+      "featureTitle": "Add navigation tabs for 'Supplier Loans' and 'Advance Payments' to the main application navigation alongside existing Income, Expenses, Sales, and Purchases tabs",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-dashboard-to-include-summary-statistics-for-total-outstanding-supplier-loans-and-total-pending-advance-payments",
+      "featureTitle": "Update the Dashboard to include summary statistics for total outstanding supplier loans and total pending advance payments",
+      "files": [
+        "frontend/src/components/Dashboard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

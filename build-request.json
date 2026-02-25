@@ -1,0 +1,92 @@
+{
+  "kind": "build_request",
+  "title": "Add supplier personal borrowing and advance payment tracking",
+  "projectName": "Rida Shop Manager",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Add a new 'Supplier Loans' section to track money borrowed by the supplier for personal use, including fields for amount, date, supplier name, purpose/description, and repayment status",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "borrowed for his personal use (for my supplier)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can record new supplier personal borrowing transactions with amount, date, and description",
+        "Supplier loan records are stored and retrieved per authenticated user",
+        "A list view displays all supplier personal borrowing records with key details",
+        "Records indicate whether the loan has been repaid or is still outstanding"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add a new 'Advance Payments' section to track advance payments given to the supplier, including fields for amount, date, supplier name, purpose/description, and settlement status",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "advance payment given to him"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can record new advance payment transactions with amount, date, and description",
+        "Advance payment records are stored and retrieved per authenticated user",
+        "A list view displays all advance payment records with key details",
+        "Records indicate whether the advance has been settled or is still pending"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add navigation tabs for 'Supplier Loans' and 'Advance Payments' to the main application navigation alongside existing Income, Expenses, Sales, and Purchases tabs",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Two new tabs appear in the main navigation: 'Supplier Loans' and 'Advance Payments'",
+        "Clicking each tab navigates to the respective page with form and list views",
+        "Navigation styling remains consistent with existing tabs"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Update the Dashboard to include summary statistics for total outstanding supplier loans and total pending advance payments",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Dashboard displays total amount of outstanding supplier personal loans",
+        "Dashboard displays total amount of pending advance payments",
+        "Statistics update in real-time when new records are added",
+        "Summary cards maintain consistent styling with existing dashboard metrics"
+      ]
+    }
+  ],
+  "constraints": [
+    "Follow the existing pattern of Form + List + Page components used for Income, Expenses, Sales, and Purchases",
+    "Store supplier loan and advance payment data in the same per-user storage pattern as other transaction types",
+    "Maintain the warm earth-tone color palette defined in the existing CSS variables"
+  ],
+  "nonGoals": [
+    "Automated repayment reminders or notifications",
+    "Complex loan amortization schedules or interest calculations",
+    "Integration with external accounting systems",
+    "Multi-currency support"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
